@@ -15,6 +15,7 @@ module.exports = {
   ignorePatterns: ['**/node_modules'],
   settings: {
     'svelte3/ignore-styles': () => true,
+    'svelte3/ignore-warnings': () => true,
   },
   overrides: [
     {
@@ -28,6 +29,8 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     semi: ['error', 'never'],
     'no-unused-vars': 0, // disabled because of bug https://github.com/sveltejs/eslint-plugin-svelte3/pull/65
+    'no-undef': 0, // disable because eslint-plugin-svelte3 doesn't support preprocessors
+    'missing-declaration': 0, // disable because eslint-plugin-svelte3 doesn't support preprocessors
     // 'no-unused-vars': [
     //   'error',
     //   { args: 'none' },
