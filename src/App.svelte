@@ -56,6 +56,8 @@
 </style>
 
 <template lang='pug'>
+  svelte:head
+    title Svelte app
   main
     h1 Hello world!
     p Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.
