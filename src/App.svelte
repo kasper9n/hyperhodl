@@ -1,12 +1,11 @@
 <script>
   import { onMount } from 'svelte'
+  import Header from './Header.svelte'
   import List from './List.svelte'
 </script>
 
 <style lang='sass'>
   :global(body)
-    background-color: #0D1116
-    color: #ffffff
     position: relative
     width: 100%
     height: 100%
@@ -24,23 +23,16 @@
   //   a:visited
   //     color: rgb(0,80,160)
 
-  // main
-  //   text-align: center
-  //   padding: 1em
-  //   max-width: 240px
-  //   margin: 0 auto
+  main
+    max-width: 800px
+    margin: auto
 
-  // h1
-  //   font-size: 4em
-  //   font-weight: 100
-
-  // @media (min-width: 640px)
-  //   main
-  //     max-width: none
 </style>
 
 <template lang='pug'>
   svelte:head
     title Svelte app
-  List
+  main
+    Header
+    List
 </template>
