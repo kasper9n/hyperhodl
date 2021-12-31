@@ -1,5 +1,8 @@
 # Hyperhodl
 
+Show performance of cryptocurrencies, stocks and currencies against another one, like BTC
+https://twitter.com/balajis/status/1339877796902961153
+
 ## Commands
 
 ### `npm run start`
